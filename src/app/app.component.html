@@ -37,54 +37,52 @@
 
 <br>
 
-<div class="position-relative m-4">
-  <div class="progress" style="height: 1px;">
-    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="container">
+<!--cards-->
+<div class="row">
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[0].cardTitle" [description]="dataCard[0].description" [image]="dataCard[0].image"></app-card>
   </div>
-  <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
-  <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
-  <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[1].cardTitle" [description]="dataCard[1].description" [image]="dataCard[1].image"></app-card>
+  </div>
+    
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[2].cardTitle" [description]="dataCard[2].description" [image]="dataCard[2].image"></app-card>
+  </div>
+
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[3].cardTitle" [description]="dataCard[3].description" [image]="dataCard[3].image"></app-card>
+  </div>
+
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[4].cardTitle" [description]="dataCard[4].description" [image]="dataCard[4].image"></app-card>
+  </div>
+
+  <div class="col-4">
+    <app-card [cardTitle]="dataCard[5].cardTitle" [description]="dataCard[5].description" [image]="dataCard[5].image"></app-card>
+  </div>
 </div>
 
 <br>
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<br>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-<br>
-
+<!-- Form -->
 <form>
   <legend>Disabled fieldset example</legend>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre(s)</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleName" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Apellido(s)</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleApellido" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
-    <label for="disabledSelect" class="form-label"></label>
-    <select id="disabledSelect" class="form-select">
-      <option>Fehca de naciminto</option>
-    </select>
+    <label for="exampleInputEmail1" class="form-label">Fecha de nacimiento</label>
+    <input type="date" class="form-control" id="exampleApellido" aria-describedby="emailHelp">
   </div>
 
   <div class="mb-3">
@@ -96,24 +94,25 @@
     </select>
   </div>
 
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-success">Registrar</button>
-  -
-  <button type="submit" class="btn btn-danger">Cancelar</button>
+  <button type="button" class="btn btn-primary">Registrar</button>
+  <button type="button" class="btn btn-danger">Cancelar</button>
+
 </form>
 
 <br>
 
-<h5><span class="badge bg-secondary">Canada</span></h5>
-<h5><span class="badge bg-secondary">Belice</span></h5>
-<h5><span class="badge bg-secondary">Rusia</span></h5>
-<h5><span class="badge bg-secondary">Indonesia</span></h5>
-<h5><span class="badge bg-secondary">Alemania</span></h5>
-<h5><span class="badge bg-secondary">Austria</span></h5>
-<h5><span class="badge bg-secondary">Grecia</span></h5>
-<h5><span class="badge bg-secondary">Nepal</span></h5>
-<h5><span class="badge bg-secondary">Japon</span></h5>
-<h5><span class="badge bg-secondary">Congo</span></h5>
+<!-- Badges-->
+<div class="row">
+  <div class="col-7">
+    <span class="badge rounded-pill bg-primary">Canada</span>
+    <span class="badge rounded-pill bg-secondary">Senegal</span>
+    <span class="badge rounded-pill bg-success">Indonesia</span>
+    <span class="badge rounded-pill bg-danger">Chile</span>
+    <span class="badge rounded-pill bg-warning">Colombia</span>
+    <span class="badge rounded-pill bg-info">Grecia</span>
+    <span class="badge rounded-pill bg-dark">Nepal</span>
+    <span class="badge rounded-pill bg-primary">Camerun</span>
+    <span class="badge rounded-pill bg-secondary">Finlandia</span>
+    <span class="badge rounded-pill bg-success">Suecia</span>
+ </div>
+</div>
